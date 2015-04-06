@@ -26,7 +26,7 @@ namespace hi3a\authclient;
  * ]
  * ~~~
  */
-class Oauth2Client extends OAuth2
+class Oauth2Client extends \yii\authclient\OAuth2
 {
     /** site for urls generation */
     public $site;
