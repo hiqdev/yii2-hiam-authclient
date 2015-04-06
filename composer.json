@@ -1,0 +1,27 @@
+{
+    "name": "hiqdev/yii2-hi3a-authclient",
+    "description": "Hi3a OAuth2 client extension for Yii 2",
+    "keywords": ["yii2", "extension", "oauth2", "hi3a", "hipanel"],
+    "homepage": "https://github.com/hiqdev/yii2-hi3a-authclient",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "email": "support@hiqdev.com",
+        "source": "https://github.com/hiqdev/yii2-hi3a-authclient"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "email": "sol@hiqdev.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-authclient": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hi3a\\authclient\\": ""
+        }
+    }
+}
