@@ -1,7 +1,7 @@
 {
     "name": "hiqdev/yii2-hi3a-authclient",
     "type": "yii2-extension",
-    "description": "Hi3a OAuth2 client extension for Yii 2",
+    "description": "OAuth2 client for yii2 to login through Hi3a",
     "keywords": ["yii2", "extension", "oauth2", "hi3a", "hipanel"],
     "homepage": "https://hiqdev.com/yii2-hi3a-authclient",
     "support": {
