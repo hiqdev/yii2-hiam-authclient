@@ -46,8 +46,8 @@ class Oauth2Client extends \yii\authclient\OAuth2
             $this->site = 'https://'.$this->site;
         };
         $defaults = [
-            'authUrl'       => 'oauth2/authorize',
-            'tokenUrl'      => 'oauth2/token',
+            'authUrl'       => 'oauth/authorize',
+            'tokenUrl'      => 'oauth/token',
             'apiBaseUrl'    => 'api',
         ];
         foreach ($defaults as $k => $v) {
