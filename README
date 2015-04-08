@@ -1,5 +1,5 @@
-Hi3a OAuth2 client for Yii 2
-============================
+OAuth2 client for yii2 to login through Hi3a
+============================================
 
 - Hi3a is AAA server which provides OAuth2, ABAC and logging.
 - AAA - Authentication, Authorization and Audit
