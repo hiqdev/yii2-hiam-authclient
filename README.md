@@ -1,10 +1,10 @@
 Hi3a OAuth2 client for Yii 2
 ============================
 
-yii2-hi3a-authclient
+It is the part of [hi3a](https://hiqdev.com/hi3a) and [HiPanel](https://hipanel.com)
 
-It is the part of [HiPanel](https://hipanel.com)
-It is extended from yii2-authclient.
+It is based on [yiisoft/yii2-authclient](https://github.com/yiisoft/yii2-authclient).
+
 Hi3a is AAA server which provides OAuth2 and ABAC.
 
 Installation
