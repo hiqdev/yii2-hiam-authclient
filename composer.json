@@ -7,7 +7,7 @@
     "support": {
         "email":  "support@hiqdev.com",
         "source": "https://github.com/hiqdev/yii2-hi3a-authclient",
-        "issues": "https://github.com/hiqdev/yii2-hi3a-authclient/issues?state=open",
+        "issues": "https://github.com/hiqdev/yii2-hi3a-authclient/issues",
         "wiki":   "https://github.com/hiqdev/yii2-hi3a-authclient/wiki",
         "forum":  "https://forum.hiqdev.com/hi3a"
     },
