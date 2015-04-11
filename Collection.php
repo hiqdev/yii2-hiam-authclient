@@ -1,4 +1,9 @@
 <?php
+/**
+ * @link http://hiqdev.com/yii2-hi3a-authclient
+ * @copyright Copyright (c) 2015 HiQDev
+ * @license http://hiqdev.com/yii2-hi3a-authclient/license
+ */
 
 namespace hi3a\authclient;
 

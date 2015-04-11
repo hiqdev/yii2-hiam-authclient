@@ -1,4 +1,9 @@
 <?php
+/**
+ * @link http://hiqdev.com/yii2-hi3a-authclient
+ * @copyright Copyright (c) 2015 HiQDev
+ * @license http://hiqdev.com/yii2-hi3a-authclient/license
+ */
 
 namespace hi3a\authclient;
 
@@ -8,14 +13,13 @@ namespace hi3a\authclient;
  * In order to use hi3a you must register your application at <https://hi3a.hipanel.com/>.
  *
  * Example application configuration:
- *
  * ~~~
  * 'components' => [
  *     'authClientCollection' => [
  *         'class' => 'hi3a\authclient\Collection',
  *         'clients' => [
  *             'hi3a' => [
- *                 'class'        => 'hiqdev\hi3aClient\Oauth2Client',
+ *                 'class'        => 'hi3a\authclient\Hi3aClient',
  *                 'site'         => 'hi3a.hipanel.com',
  *                 'clientId'     => 'client_id',
  *                 'clientSecret' => 'client_secret',
@@ -26,7 +30,7 @@ namespace hi3a\authclient;
  * ]
  * ~~~
  */
-class Oauth2Client extends \yii\authclient\OAuth2
+class Hi3aClient extends \yii\authclient\OAuth2
 {
     /** site for urls generation */
     public $site;

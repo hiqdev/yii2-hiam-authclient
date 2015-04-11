@@ -1,5 +1,5 @@
-The Hi3a, HiPanel and it's modules are free software.
-It is released under the terms of the following BSD License.
+The yii2-hi3a-authclient extension is free software.
+It is released under the terms of the following BSD 3-clause License.
 
 Copyright © 2014-2015 by HiQDev (http://hiqdev.com)
 All rights reserved.
