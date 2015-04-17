@@ -1,8 +1,8 @@
 <?php
 /**
- * @link http://hiqdev.com/yii2-hi3a-authclient
- * @copyright Copyright (c) 2015 HiQDev
+ * @link    http://hiqdev.com/yii2-hi3a-authclient
  * @license http://hiqdev.com/yii2-hi3a-authclient/license
+ * @copyright Copyright (c) 2015 HiQDev
  */
 
 namespace hi3a\authclient;
@@ -32,16 +32,22 @@ namespace hi3a\authclient;
  */
 class Hi3aClient extends \yii\authclient\OAuth2
 {
-    /** site for urls generation */
+    /**
+     * Site for urls generation
+     */
     public $site;
 
-    public function buildUrl ($path,array $params = []) {
+    public function buildUrl ($path,array $params = [])
+    {
         $url = $this->site.'/'.$path;
         return $params ? $this->composeUrl($url,$params) : $url;
     }
 
-    /** inits Urls based on $site */
-    public function init () {
+    /**
+     * Inits Urls based on $site
+     */
+    public function init ()
+    {
         parent::init();
         if (!$this->site) {
             $this->site = 'hi3a.hipanel.com';
