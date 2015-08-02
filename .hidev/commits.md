@@ -3,13 +3,15 @@ hiqdev/yii2-hiam-authclient commits history
 
 ## Under development
 
-- Renamed to yii2-hiam-authclient
+- Changed: moved to src
+    - ab1a5ec 2015-08-02 moved to src (sol@hiqdev.com)
+- Changed: renamed to yii2-hiam-authclient
     - 64ad128 2015-08-02 renaming to hiam (sol@hiqdev.com)
     - 30140d1 2015-08-02 renaming to hiam (sol@hiqdev.com)
     - f5c940c 2015-04-17 + getActiveClient (sol@hiqdev.com)
     - 404f449 2015-04-12 * composer.json: - require yii2 cause it is required by yii2-authclient (sol@hiqdev.com)
     - bb9ee8e 2015-04-11 Update README.md (sol@hiqdev.com)
-- Renamed to Hi3aClient from Oauth2Client
+- Changed: renamed to Hi3aClient from Oauth2Client
     - 8279869 2015-04-11 Renamed to Hi3aClient from Oauth2Client Renamed to markdown .md README,LICENSE + CHANGELOG + copyright header to files (sol@hiqdev.com)
     - a0e0c66 2015-04-08 * composer.json a bit (sol@hiqdev.com)
     - a5ff5a2 2015-04-08 Update README (sol@hiqdev.com)
@@ -22,12 +24,12 @@ hiqdev/yii2-hiam-authclient commits history
 
 ## v0.0.2 2015-04-06
 
-- Fixed class path
+- Changed: fixed class path
     - 005485b 2015-04-06 fixed class path (sol@hiqdev.com)
 
 ## v0.0.1 2015-04-06
 
-- Inited
+- Added: inited
     - bf578b2 2015-04-06 inited (sol@hiqdev.com)
 
 ## Development started
