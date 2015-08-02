@@ -3,6 +3,8 @@ hiqdev/yii2-hiam-authclient commits history
 
 ## Under development
 
+- Fixed styling: php-cs-fixed
+    - 047d2da 2015-08-02 php-cs-fixed (sol@hiqdev.com)
 - Changed: moved to src
     - ab1a5ec 2015-08-02 moved to src (sol@hiqdev.com)
 - Changed: renamed to yii2-hiam-authclient

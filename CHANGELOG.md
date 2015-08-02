@@ -3,6 +3,7 @@ hiqdev/yii2-hiam-authclient changelog
 
 ## Under development
 
+- Fixed styling: php-cs-fixed
 - Changed: moved to src
 - Changed: renamed to yii2-hiam-authclient
 - Changed: renamed to Hi3aClient from Oauth2Client
