@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * OAuth2 client for yii2 to login through HIAM server
+ *
+ * @link      https://github.com/hiqdev/yii2-hiam-authclient
+ * @package   yii2-hiam-authclient
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2015, HiQDev (https://hiqdev.com/)
+ */
+
 namespace hiam\authclient;
 
 /**
@@ -30,32 +39,33 @@ namespace hiam\authclient;
 class HiamClient extends \yii\authclient\OAuth2
 {
     /**
-     * Site for urls generation
+     * Site for urls generation.
      */
     public $site;
 
-    public function buildUrl ($path,array $params = [])
+    public function buildUrl($path, array $params = [])
     {
-        $url = $this->site.'/'.$path;
-        return $params ? $this->composeUrl($url,$params) : $url;
+        $url = $this->site . '/' . $path;
+
+        return $params ? $this->composeUrl($url, $params) : $url;
     }
 
     /**
-     * Inits Urls based on $site
+     * Inits Urls based on $site.
      */
-    public function init ()
+    public function init()
     {
         parent::init();
         if (!$this->site) {
             $this->site = 'hiam.hipanel.com';
         };
         if (strpos($this->site, '://') === false) {
-            $this->site = 'https://'.$this->site;
+            $this->site = 'https://' . $this->site;
         };
         $defaults = [
-            'authUrl'       => 'oauth/authorize',
-            'tokenUrl'      => 'oauth/token',
-            'apiBaseUrl'    => 'api',
+            'authUrl'    => 'oauth/authorize',
+            'tokenUrl'   => 'oauth/token',
+            'apiBaseUrl' => 'api',
         ];
         foreach ($defaults as $k => $v) {
             if (!$this->{$k}) {
@@ -64,13 +74,15 @@ class HiamClient extends \yii\authclient\OAuth2
         };
     }
 
-    /** @inheritdoc */
-    protected function initUserAttributes () {
+    /** {@inheritdoc} */
+    protected function initUserAttributes()
+    {
         return $this->getAccessToken()->getParam('user_attributes');
     }
 
-    /** @inheritdoc */
-    protected function apiInternal ($accessToken, $url, $method, array $params, array $headers) {
+    /** {@inheritdoc} */
+    protected function apiInternal($accessToken, $url, $method, array $params, array $headers)
+    {
         if (!isset($params['format'])) {
             $params['format'] = 'json';
         }
@@ -79,9 +91,15 @@ class HiamClient extends \yii\authclient\OAuth2
         return $this->sendRequest($method, $url, $params, $headers);
     }
 
-    /** @inheritdoc */
-    protected function defaultName  () { return 'hiam'; }
+    /** {@inheritdoc} */
+    protected function defaultName()
+    {
+        return 'hiam';
+    }
 
-    /** @inheritdoc */
-    protected function defaultTitle () { return 'hiam'; }
+    /** {@inheritdoc} */
+    protected function defaultTitle()
+    {
+        return 'hiam';
+    }
 }
