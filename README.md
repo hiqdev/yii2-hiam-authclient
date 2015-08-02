@@ -1,9 +1,7 @@
-OAuth2 client for yii2 to login through Hi3a
---------------------------------------------
+OAuth2 client for yii2 to login through HIAM server
+---------------------------------------------------
 
-- Hi3a - AAA server providing OAuth2, ABAC and logging.
-- AAA - Authentication, Authorization and Audit.
-- ABAC - Attribute Based Access Control.
+Use identical to https://github.com/yiisoft/yii2-authclient
 
 For more info see wiki:
-https://github.com/hiqdev/yii2-hi3a-authclient/wiki
+https://github.com/hiqdev/yii2-hiam-authclient/wiki

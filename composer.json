@@ -1,25 +1,54 @@
 {
     "name": "hiqdev/yii2-hiam-authclient",
     "type": "yii2-extension",
-    "description": "OAuth2 client for yii2 to login through Hi3a",
-    "keywords": ["oauth2","hiam","hipanel","yii2","extension"],
-    "homepage": "https://hiqdev.com/yii2-hiam-authclient",
+    "description": "OAuth2 client for yii2 to login through HIAM server",
+    "keywords": [
+        "Oauth2",
+        "HIAM",
+        "yii2",
+        "extension"
+    ],
+    "homepage": "https://github.com/hiqdev/yii2-hiam-authclient",
+    "license": "BSD-3-Clause",
     "support": {
-        "email":  "support@hiqdev.com",
+        "email": "support@hiqdev.com",
         "source": "https://github.com/hiqdev/yii2-hiam-authclient",
         "issues": "https://github.com/hiqdev/yii2-hiam-authclient/issues",
-        "wiki":   "https://github.com/hiqdev/yii2-hiam-authclient/wiki",
-        "forum":  "https://forum.hiqdev.com/hiam"
+        "wiki": "https://github.com/hiqdev/yii2-hiam-authclient/wiki",
+        "forum": "https://forum.hiqdev.com/hiam"
     },
-    "license": "BSD-3-Clause",
     "authors": [
         {
-            "name":     "Andrii Vasyliev",
-            "email":    "sol@hiqdev.com",
+            "name": "Andrii Vasyliev",
+            "role": "Project lead",
+            "email": "sol@hiqdev.com",
             "homepage": "https://hipanel.com/"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Lead backend developer",
+            "email": "silverfire@hiqdev.com",
+            "homepage": "http://silverfire.me/"
+        },
+        {
+            "name": "Andrey Klochok",
+            "role": "Lead frontend developer",
+            "email": "tafid@hiqdev.com",
+            "homepage": "https://hiqdev.com/"
+        },
+        {
+            "name": "Yuriy Myronchuk",
+            "role": "QA Lead",
+            "email": "bladeroot@hiqdev.com",
+            "homepage": "https://hiqdev.com/"
         }
     ],
     "require": {
         "yiisoft/yii2-authclient": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hiqdev\\yii2-hiam-authclient\\": "src"
+        }
     }
 }
