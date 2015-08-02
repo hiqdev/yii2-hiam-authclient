@@ -1,11 +1,6 @@
 <?php
-/**
- * @link    http://hiqdev.com/yii2-hi3a-authclient
- * @license http://hiqdev.com/yii2-hi3a-authclient/license
- * @copyright Copyright (c) 2015 HiQDev
- */
 
-namespace hi3a\authclient;
+namespace hiam\authclient;
 
 class Collection extends \yii\authclient\Collection
 {

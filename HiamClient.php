@@ -1,26 +1,23 @@
 <?php
-/**
- * @link    http://hiqdev.com/yii2-hi3a-authclient
- * @license http://hiqdev.com/yii2-hi3a-authclient/license
- * @copyright Copyright (c) 2015 HiQDev
- */
 
-namespace hi3a\authclient;
+namespace hiam\authclient;
 
 /**
- * hi3a allows authentication via hi3a OAuth2.
+ * Class HiamClient.
+ * Allows OAuth2 authentication through HIAM server.
  *
- * In order to use hi3a you must register your application at <https://hi3a.hipanel.com/>.
+ * In order to use HIAM client you must register your application at HIAM server.
+ * Used identical to yii2-authclient Oauth2Client.
  *
  * Example application configuration:
  * ~~~
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'hi3a\authclient\Collection',
+ *         'class' => 'hiam\authclient\Collection',
  *         'clients' => [
- *             'hi3a' => [
- *                 'class'        => 'hi3a\authclient\Hi3aClient',
- *                 'site'         => 'hi3a.hipanel.com',
+ *             'hiam' => [
+ *                 'class'        => 'hiam\authclient\HiamClient',
+ *                 'site'         => 'hiam.hipanel.com',
  *                 'clientId'     => 'client_id',
  *                 'clientSecret' => 'client_secret',
  *             ],
@@ -30,7 +27,7 @@ namespace hi3a\authclient;
  * ]
  * ~~~
  */
-class Hi3aClient extends \yii\authclient\OAuth2
+class HiamClient extends \yii\authclient\OAuth2
 {
     /**
      * Site for urls generation
@@ -50,7 +47,7 @@ class Hi3aClient extends \yii\authclient\OAuth2
     {
         parent::init();
         if (!$this->site) {
-            $this->site = 'hi3a.hipanel.com';
+            $this->site = 'hiam.hipanel.com';
         };
         if (strpos($this->site, '://') === false) {
             $this->site = 'https://'.$this->site;
@@ -83,8 +80,8 @@ class Hi3aClient extends \yii\authclient\OAuth2
     }
 
     /** @inheritdoc */
-    protected function defaultName  () { return 'hi3a'; }
+    protected function defaultName  () { return 'hiam'; }
 
     /** @inheritdoc */
-    protected function defaultTitle () { return 'hi3a'; }
+    protected function defaultTitle () { return 'hiam'; }
 }

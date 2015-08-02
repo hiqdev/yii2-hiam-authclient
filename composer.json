@@ -1,15 +1,15 @@
 {
-    "name": "hiqdev/yii2-hi3a-authclient",
+    "name": "hiqdev/yii2-hiam-authclient",
     "type": "yii2-extension",
     "description": "OAuth2 client for yii2 to login through Hi3a",
-    "keywords": ["oauth2","hi3a","hipanel","yii2","extension"],
-    "homepage": "https://hiqdev.com/yii2-hi3a-authclient",
+    "keywords": ["oauth2","hiam","hipanel","yii2","extension"],
+    "homepage": "https://hiqdev.com/yii2-hiam-authclient",
     "support": {
         "email":  "support@hiqdev.com",
-        "source": "https://github.com/hiqdev/yii2-hi3a-authclient",
-        "issues": "https://github.com/hiqdev/yii2-hi3a-authclient/issues",
-        "wiki":   "https://github.com/hiqdev/yii2-hi3a-authclient/wiki",
-        "forum":  "https://forum.hiqdev.com/hi3a"
+        "source": "https://github.com/hiqdev/yii2-hiam-authclient",
+        "issues": "https://github.com/hiqdev/yii2-hiam-authclient/issues",
+        "wiki":   "https://github.com/hiqdev/yii2-hiam-authclient/wiki",
+        "forum":  "https://forum.hiqdev.com/hiam"
     },
     "license": "BSD-3-Clause",
     "authors": [
@@ -20,11 +20,6 @@
         }
     ],
     "require": {
-        "yiisoft/yii2-authclient": "2.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "hi3a\\authclient\\": ""
-        }
+        "yiisoft/yii2-authclient": "~2.0"
     }
 }

@@ -1,4 +1,4 @@
-hiqdev/yii2-hi3a-authclient changelog
+hiqdev/yii2-hiam-authclient changelog
 =====================================
 
 0.1.0 under development
