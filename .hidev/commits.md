@@ -4,6 +4,7 @@ hiqdev/yii2-hiam-authclient commits history
 ## Under development
 
 - Renamed to yii2-hiam-authclient
+    - 64ad128 2015-08-02 renaming to hiam (sol@hiqdev.com)
     - 30140d1 2015-08-02 renaming to hiam (sol@hiqdev.com)
     - f5c940c 2015-04-17 + getActiveClient (sol@hiqdev.com)
     - 404f449 2015-04-12 * composer.json: - require yii2 cause it is required by yii2-authclient (sol@hiqdev.com)
