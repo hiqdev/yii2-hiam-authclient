@@ -48,7 +48,7 @@
     },
     "autoload": {
         "psr-4": {
-            "hiqdev\\yii2-hiam-authclient\\": "src"
+            "hiam\\authclient\\": "src"
         }
     }
 }
