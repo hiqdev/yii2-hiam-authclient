@@ -16,5 +16,5 @@ hiqdev/yii2-hiam-authclient changelog
 
 - Added: inited
 
-## Development started
+## Development started 2015-04-06
 

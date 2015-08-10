@@ -6,6 +6,7 @@ hiqdev/yii2-hiam-authclient commits history
 - Fixed styling: php-cs-fixed
     - 047d2da 2015-08-02 php-cs-fixed (sol@hiqdev.com)
 - Changed: moved to src
+    - 514f7e7 2015-08-10 fixed namespace (sol@hiqdev.com)
     - ab1a5ec 2015-08-02 moved to src (sol@hiqdev.com)
 - Changed: renamed to yii2-hiam-authclient
     - 64ad128 2015-08-02 renaming to hiam (sol@hiqdev.com)
@@ -34,5 +35,5 @@ hiqdev/yii2-hiam-authclient commits history
 - Added: inited
     - bf578b2 2015-04-06 inited (sol@hiqdev.com)
 
-## Development started
+## Development started 2015-04-06
 
