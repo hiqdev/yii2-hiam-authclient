@@ -7,4 +7,5 @@ package:
     description:    Use identical to https://github.com/yiisoft/yii2-authclient
 
 require:
-    hiqdev/hidev-config-php:    "*@dev"
+    hiqdev/hidev-config:        "*"
+    hiqdev/hidev-config-php:    "*"
