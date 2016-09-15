@@ -3,8 +3,9 @@ hiqdev/yii2-hiam-authclient
 
 ## [0.0.3] - 2016-09-15
 
-    - [7008343] 2016-09-15 improved phpdoc [sol@hiqdev.com]
 - Changed: renamed to `yii2-hiam-authclient` and HiamClient
+    - [54dcee3] 2016-09-15 redone bumping to `chkipper` [sol@hiqdev.com]
+    - [7008343] 2016-09-15 improved phpdoc [sol@hiqdev.com]
     - [717614a] 2016-09-15 rehideved [sol@hiqdev.com]
     - [047d2da] 2015-08-02 php-cs-fixed [sol@hiqdev.com]
     - [514f7e7] 2015-08-10 fixed namespace [sol@hiqdev.com]
@@ -57,3 +58,4 @@ hiqdev/yii2-hiam-authclient
 [bf578b2]: https://github.com/hiqdev/yii2-hiam-authclient/commit/bf578b2
 [717614a]: https://github.com/hiqdev/yii2-hiam-authclient/commit/717614a
 [7008343]: https://github.com/hiqdev/yii2-hiam-authclient/commit/7008343
+[54dcee3]: https://github.com/hiqdev/yii2-hiam-authclient/commit/54dcee3
