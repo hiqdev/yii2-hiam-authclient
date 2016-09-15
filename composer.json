@@ -1,7 +1,7 @@
 {
     "name": "hiqdev/yii2-hiam-authclient",
     "type": "yii2-extension",
-    "description": "OAuth2 client for yii2 to login through HIAM server",
+    "description": "OAuth2 client for yii2 to login with HIAM server",
     "keywords": [
         "Oauth2",
         "HIAM",
@@ -46,9 +46,19 @@
     "require": {
         "yiisoft/yii2-authclient": "~2.0"
     },
+    "require-dev": {
+        "hiqdev/hidev-php": "<2.0 || dev-master",
+        "hiqdev/hidev-hiqdev": "<2.0 || dev-master"
+    },
     "autoload": {
         "psr-4": {
             "hiam\\authclient\\": "src"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

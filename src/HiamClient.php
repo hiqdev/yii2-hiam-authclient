@@ -1,12 +1,12 @@
 <?php
 
 /*
- * OAuth2 client for yii2 to login through HIAM server
+ * OAuth2 client for yii2 to login with HIAM server
  *
  * @link      https://github.com/hiqdev/yii2-hiam-authclient
  * @package   yii2-hiam-authclient
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015, HiQDev (https://hiqdev.com/)
+ * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiam\authclient;
@@ -58,20 +58,20 @@ class HiamClient extends \yii\authclient\OAuth2
         parent::init();
         if (!$this->site) {
             $this->site = 'hiam.hipanel.com';
-        };
+        }
         if (strpos($this->site, '://') === false) {
             $this->site = 'https://' . $this->site;
-        };
+        }
         $defaults = [
-            'authUrl'    => 'oauth/authorize',
-            'tokenUrl'   => 'oauth/token',
+            'authUrl' => 'oauth/authorize',
+            'tokenUrl' => 'oauth/token',
             'apiBaseUrl' => 'api',
         ];
         foreach ($defaults as $k => $v) {
             if (!$this->{$k}) {
                 $this->{$k} = $this->buildUrl($v);
-            };
-        };
+            }
+        }
     }
 
     /** {@inheritdoc} */

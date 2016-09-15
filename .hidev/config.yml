@@ -1,11 +1,9 @@
 package:
-    name:           yii2-hiam-authclient
-    label:          HIAM AuthClient
-    title:          OAuth2 client for yii2 to login through HIAM server
     type:           yii2-extension
+    name:           yii2-hiam-authclient
+    title:          OAuth2 client for yii2 to login with HIAM server
+    headline:       HIAM AuthClient
     keywords:       Oauth2, HIAM, yii2, extension
-    description:    Use identical to https://github.com/yiisoft/yii2-authclient
+    description:    |
+        Use identical to [yiisoft/yii2-authclient](https://github.com/yiisoft/yii2-authclient).
 
-require:
-    hiqdev/hidev-config:        "*"
-    hiqdev/hidev-config-php:    "*"
