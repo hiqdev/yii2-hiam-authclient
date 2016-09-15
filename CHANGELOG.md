@@ -1,20 +1,16 @@
-hiqdev/yii2-hiam-authclient changelog
--------------------------------------
+hiqdev/yii2-hiam-authclient
+---------------------------
 
-## Under development
+## [0.0.3] - 2016-09-15
 
-- Fixed styling: php-cs-fixed
-- Changed: moved to src
-- Changed: renamed to yii2-hiam-authclient
-- Changed: renamed to Hi3aClient from Oauth2Client
+- Changed: renamed to `yii2-hiam-authclient` and HiamClient
 
-## v0.0.2 2015-04-06
+## [v0.0.2] - 2015-04-06
 
 - Changed: fixed class path
 
-## v0.0.1 2015-04-06
+## [v0.0.1] - 2015-04-06
 
 - Added: inited
 
-## Development started 2015-04-06
-
+## [Development started] - 2015-04-06
