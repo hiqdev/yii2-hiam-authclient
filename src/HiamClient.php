@@ -19,13 +19,13 @@ namespace hiam\authclient;
  * Used identical to yii2-authclient Oauth2Client.
  *
  * Example application configuration:
- * ~~~
+ * ```
  * 'components' => [
  *     'authClientCollection' => [
- *         'class' => 'hiam\authclient\Collection',
+ *         'class' => \hiam\authclient\Collection::class,
  *         'clients' => [
  *             'hiam' => [
- *                 'class'        => 'hiam\authclient\HiamClient',
+ *                 'class'        => \hiam\authclient\HiamClient::class,
  *                 'site'         => 'hiam.hipanel.com',
  *                 'clientId'     => 'client_id',
  *                 'clientSecret' => 'client_secret',
@@ -34,7 +34,7 @@ namespace hiam\authclient;
  *     ]
  *     ...
  * ]
- * ~~~
+ * ```
  */
 class HiamClient extends \yii\authclient\OAuth2
 {
