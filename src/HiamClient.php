@@ -102,4 +102,28 @@ class HiamClient extends \yii\authclient\OAuth2
     {
         return 'hiam';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setState($key, $value)
+    {
+        return parent::setState($key, $value);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getState($key)
+    {
+        return parent::getState($key);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function removeState($key)
+    {
+        return parent::removeState($key);
+    }
 }
