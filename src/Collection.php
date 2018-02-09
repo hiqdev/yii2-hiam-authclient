@@ -19,7 +19,7 @@ class Collection extends \yii\authclient\Collection
     public function getClient($id = null)
     {
         if ($id === null) {
-            list($id, $dummy) = each($this->getClients());
+            $id = array_keys($this->getClients())[0];
         }
 
         return parent::getClient($id);
