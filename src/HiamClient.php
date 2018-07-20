@@ -51,6 +51,16 @@ class HiamClient extends \yii\authclient\OAuth2
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function buildAuthUrl(array $params = [])
+    {
+        $params['language'] = \Yii::$app->language;
+
+        return parent::buildAuthUrl($params);
+    }
+
+    /**
      * Inits Urls based on $site.
      */
     public function init()
