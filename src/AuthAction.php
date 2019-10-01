@@ -21,9 +21,17 @@ class AuthAction extends \yii\authclient\AuthAction
         try {
             return parent::run();
         } catch (\Exception $e) {
+            $response = Yii::$app->getResponse();
+
             $isLoggedIn = !empty(Yii::$app->user->id);
-            if ($e->getMessage() === 'Invalid auth state parameter.' && $isLoggedIn) {
-                return $this->redirectSuccess();
+            if ($e->getMessage() === 'Invalid auth state parameter.') {
+                if ($isLoggedIn) {
+                    return $this->redirectSuccess();
+                }
+            } else {
+                $response->setStatusCode(500);
+
+                return $e->getMessage();
             }
         }
     }
