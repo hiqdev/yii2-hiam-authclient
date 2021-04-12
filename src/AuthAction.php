@@ -21,10 +21,8 @@ class AuthAction extends \yii\authclient\AuthAction
         try {
             return parent::run();
         } catch (\Exception $e) {
-            $response = Yii::$app->getResponse();
-
             if ($e->getMessage() !== 'Invalid auth state parameter.') {
-                $response->setStatusCode(500);
+                Yii::$app->getResponse()->setStatusCode(500);
                 return Html::encode($e->getMessage());
             }
 
