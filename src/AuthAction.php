@@ -12,27 +12,25 @@
 namespace hiam\authclient;
 
 use Yii;
+use yii\helpers\Html;
 
 class AuthAction extends \yii\authclient\AuthAction
 {
     public function run()
     {
-        /// Fixed problem with repeated return from HIAM
         try {
             return parent::run();
         } catch (\Exception $e) {
-            $response = Yii::$app->getResponse();
-
-            $isLoggedIn = !empty(Yii::$app->user->id);
-            if ($e->getMessage() === 'Invalid auth state parameter.') {
-                if ($isLoggedIn) {
-                    return $this->redirectSuccess();
-                }
-            } else {
-                $response->setStatusCode(500);
-
-                return $e->getMessage();
+            if ($e->getMessage() !== 'Invalid auth state parameter.') {
+                Yii::$app->getResponse()->setStatusCode(500);
+                return Html::encode($e->getMessage());
             }
+
+            if (!empty(Yii::$app->user->id)) {
+                return $this->redirectSuccess();
+            }
+
+            return '';
         }
     }
 }
