@@ -70,7 +70,16 @@ class HiamClient extends \yii\authclient\OAuth2
             $this->site = 'hiam.hipanel.com';
         }
         if (strpos($this->site, '://') === false) {
-            $this->site = 'https://' . $this->site;
+            // Was unconditionally 'https://', which breaks any consumer running over
+            // plain HTTP (e.g. local dev with no real TLS) even though it correctly
+            // has no scheme in $site itself (bare hostname is the documented way to
+            // configure this). Default to https (the safe/common case - most real
+            // deployments, including k8s ones without YII_ENV=prod, do have real TLS),
+            // but defer to the actual current request's scheme when one is available,
+            // so a genuinely-insecure request context isn't forced onto a scheme it
+            // doesn't have.
+            $isSecure = \Yii::$app instanceof \yii\web\Application && \Yii::$app->getRequest()->getIsSecureConnection();
+            $this->site = ($isSecure === false ? 'http://' : 'https://') . $this->site;
         }
         $defaults = [
             'authUrl' => 'oauth/authorize',
